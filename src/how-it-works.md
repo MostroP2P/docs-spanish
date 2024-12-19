@@ -48,4 +48,4 @@ Si durante el proceso, Alice y Bob deciden no continuar con el intercambio, pued
 4. **Liberación de los Sats por Alice:**  
    Cuando Alice presiona el botón *release* en su cliente, le envía un mensaje [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md) a Mostrod indicando que libere los Sats a Bob. Entonces, el nodo de LN asociado a esa instancia de Mostrod liquida el pago de la [hold invoice](./hold-invoice.md) y paga la invoice que proporcionó Bob. Al finalizar el proceso, Mostrod publica un evento 38383 para esa orden con el estado `success` y le envía un mensaje [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md) a Alice y Bob, solicitando que califiquen a su contraparte, quienes le envían de vuelta su calificación a través de un mensaje [NIP-59](https://github.com/nostr-protocol/nips/blob/master/59.md).
    
-Para tener más detalles de la comunicación entre Mostrod y sus clientes, puedes leer [aquí](https://mostro.network/messages).
+Para tener más detalles de la comunicación entre Mostrod y sus clientes, puedes leer [aquí](https://mostro.network/protocol/).
