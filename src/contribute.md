@@ -11,7 +11,7 @@ Si bien te sugerimos algunas áreas donde puedes colaborar, siéntete libre de p
 - **Propuestas de mejoras:** Si tienes ideas para mejorar Mostro, te invitamos a compartirlas. Muchas características clave han surgido gracias a sugerencias de la comunidad. Puedes proponer tus ideas en los [grupos de soporte](./support-and-contacts.md), o abrir un issue en el [repositorio correspondiente](https://github.com/MostroP2P), si crees que va a generar gran debate, entonces abre una discusion en dicho repositorio.
 - **Creación de contenido:** Si tienes habilidades en la creación de contenido, puedes hacer video-tutoriales o guías escritas para ayudar a los usuarios a sacar el máximo provecho a Mostro.
 - **Difusión en redes sociales:** Compartir información sobre Mostro en redes sociales ayuda a aumentar su visibilidad y atraer a más personas interesadas en contribuir o utilizarlo.
-- **Donaciones:** Si prefieres apoyar financieramente el desarrollo y mantenimiento de Mostro, puedes hacer una donación a `mostro@getalby.com`.  
+- **Donaciones:** Si prefieres apoyar financieramente el desarrollo y mantenimiento de Mostro, puedes hacer una donación a [https://geyser.fund/project/mostro](https://geyser.fund/project/mostro).
 
 ¡Muchas gracias por tu apoyo!
 
