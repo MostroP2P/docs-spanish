@@ -8,5 +8,7 @@ No hay un método estándar para resolver disputas en todas las instancias de Mo
 
 Cuando el administrador decida qué usuario tiene la razón, hará que Mostro libere los Sats al usuario que corresponde. Los administradores no cobran ningún fee extra por resolver disputas.
 
+Para saber cómo se maneja la privacidad de los usuarios ante una disputa, consulta a [esta sección](./privacy.md).
+
 Es importante tener en cuenta que las disputas no se abren automáticamente en ningún caso. Los usuarios involucrados deben iniciarlas antes de que expire la [hold invoice](./hold-invoice.md) que el vendedor ha pagado, de forma que el administrador tenga tiempo suficiente para solicitar pruebas a ambas partes y tomar una decisión adecuada, ya que el tiempo sigue corriendo desde que se aceptó la orden y no se detiene por abrir una disputa. El administrador debe resolverla antes de que el tiempo expire, los usuarios no deben esperar demasiado tiempo para iniciarla. Puedes leer más sobre los plazos de tiempo [aquí](./times.md).
 
