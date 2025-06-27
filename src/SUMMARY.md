@@ -19,8 +19,8 @@
 	- [Cómo Contribuir](./contribute.md)
 				
 - [Clientes. Cómo uso Mostro](./clients.md)
-	- [Mostro-web](./mostro-web.md)
-	- [Mostro-cli](./mostro-cli.md)
-	- [Mostrui](./mostrui.md)
 	- [Mostro mobile](./mostro-mobile.md)
+	- [Mostro-cli](./mostro-cli.md)
+	- [MostriX](./mostrix.md)
+
 	
