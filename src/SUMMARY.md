@@ -15,6 +15,7 @@
 	- [Sistema de Reputación](./reputation.md)
 	- [Gestión de Disputas](./disputes.md)
 	- [Privacidad en Mostro](./privacy.md)
+	- [Backup y Restauración de Cuenta](./backup-restore.md)
 	- [Soporte y Contacto](./support-and-contacts.md)
 	- [Cómo Contribuir](./contribute.md)
 				
