@@ -3,7 +3,7 @@
 Para utilizar Mostro, es necesario acceder a través de un cliente específico. A continuación, abordaremos varios de ellos, los cuales te permitirán interactuar tanto con Mostrod como con tu contraparte en una operación. 
 
 Los clientes de Mostro disponibles hasta el momento son:
-- **[Mostro mobile](./mostro-mobile.md)** (operativo en alfa): aplicación móvil.
+- **[Mostro mobile](./mostro-mobile.md)** (operativo en beta): aplicación móvil.
 - **[Mostro-cli](./mostro-cli.md)** (operativo): cliente desde línea de comandos.
 - **[MostriX](./mostrix.md)** (en desarrollo): cliente con interfaz TUI, que funciona en la terminal con una apariencia mejorada.
 
