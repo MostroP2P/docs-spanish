@@ -53,10 +53,10 @@
 
 - Disponible en español, inglés e italiano
 
-### Múltiples instancias
+### Múltiples nodos
 
-- Soporte para conectarse a diferentes instancias de Mostro
-- Cambiar entre instancias desde la configuración
+- Soporte para conectarse a diferentes nodos de Mostro
+- Cambiar entre nodos desde la configuración
 
 ## Primeros pasos
 

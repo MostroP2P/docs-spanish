@@ -4,11 +4,11 @@ Si tu contraparte no responde, sospechas de un intento de estafa, o surge un mal
 
 ## Cómo funciona
 
-Cuando inicies una disputa, serás atendido por el administrador de la instancia de Mostro que estés utilizando, o por una persona designada por dicho administrador (solver). Al abrir la disputa, Mostro te proporcionará un número de token único, y tu contraparte recibirá uno diferente. Ambos tokens serán revelados al administrador que gestione la disputa. Cuando el administrador se ponga en contacto contigo y con tu contraparte, te dirá cuál es tu token, lo que te permitirá verificar que es la persona designada y asegurarte de que no se trata de un impostor.
+Cuando inicies una disputa, serás atendido por el administrador del nodo de Mostro que estés utilizando, o por una persona designada por dicho administrador (solver). Al abrir la disputa, Mostro te proporcionará un número de token único, y tu contraparte recibirá uno diferente. Ambos tokens serán revelados al administrador que gestione la disputa. Cuando el administrador se ponga en contacto contigo y con tu contraparte, te dirá cuál es tu token, lo que te permitirá verificar que es la persona designada y asegurarte de que no se trata de un impostor.
 
 ## Resolución
 
-No hay un método estándar para resolver disputas en todas las instancias de Mostro. Cada administrador puede decidir cómo gestionar las disputas generadas en su instancia y qué pruebas solicitar a los usuarios para tomar la decisión más adecuada.
+No hay un método estándar para resolver disputas en todos los nodos de Mostro. Cada administrador puede decidir cómo gestionar las disputas generadas en su nodo y qué pruebas solicitar a los usuarios para tomar la decisión más adecuada.
 
 Cuando el administrador decida qué usuario tiene la razón, hará que Mostro libere los sats al usuario que corresponde. Los administradores no cobran ningún fee extra por resolver disputas.
 

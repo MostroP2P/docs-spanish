@@ -37,7 +37,7 @@ Requisitos: Rust 1.64 o superior.
 ## Uso básico
 
 ```bash
-# Configurar variables de entorno
+# Configurar variables de entorno (reemplaza las variables a tu conveniencia)
 export MOSTRO_PUBKEY=npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr
 export RELAYS='wss://relay.mostro.network,wss://nos.lol'
 

@@ -1,6 +1,6 @@
 # MostriX
 
-MostriX es un cliente de Mostro con interfaz TUI (Terminal User Interface) enfocado principalmente en administradores de instancias de Mostro. Su interfaz visual en terminal permite gestionar disputas y administrar la instancia de forma ágil, sin necesidad de escribir comandos manualmente.
+MostriX es un cliente de Mostro con interfaz TUI (Terminal User Interface) enfocado principalmente en administradores de nodos de Mostro. Su interfaz visual en terminal permite gestionar disputas y administrar el nodo de forma ágil, sin necesidad de escribir comandos manualmente.
 
 ![mostrix](./assets/images/mostrix.png)
 
@@ -45,7 +45,7 @@ MostriX se configura mediante un archivo `settings.toml`. En la primera ejecuci�
 
 Parámetros principales:
 
-- `mostro_pubkey`: Clave pública de la instancia de Mostro
+- `mostro_pubkey`: Clave pública del nodo de Mostro
 - `nsec_privkey`: Tu clave privada de Nostr
 - `relays`: Lista de relays a conectar
 - `currencies`: Monedas fiat que te interesan
