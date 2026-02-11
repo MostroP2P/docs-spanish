@@ -12,10 +12,6 @@ La instancia de Mostro actualmente activa en mainnet (`npub1stagewtcks78nvs4vkzm
 
 Cada instancia también define los montos mínimos y máximos permitidos por operación. La instancia principal en mainnet permite intercambios desde 100 sats hasta 20,000 sats por operación.
 
-## Monedas aceptadas
-
-Los operadores de cada instancia de Mostro pueden decidir qué monedas fiat aceptan. Antes de operar, verifica que la instancia que elijas soporte la moneda con la que deseas comerciar.
-
 ## Múltiples instancias de Mostro
 
 Mostro está diseñado para ser un sistema descentralizado donde múltiples operadores pueden correr sus propias instancias. Esto significa que:
