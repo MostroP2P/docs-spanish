@@ -10,7 +10,7 @@ Cuando inicies una disputa, serás atendido por el administrador del nodo de Mos
 
 No hay un método estándar para resolver disputas en todos los nodos de Mostro. Cada administrador puede decidir cómo gestionar las disputas generadas en su nodo y qué pruebas solicitar a los usuarios para tomar la decisión más adecuada.
 
-Cuando el administrador decida qué usuario tiene la razón, hará que Mostro libere los sats al usuario que corresponde. Los administradores no cobran ningún fee extra por resolver disputas.
+Cuando el administrador decida qué usuario tiene la razón, hará que Mostro libere los sats al usuario que corresponde. Los administradores no cobran ninguna tarifa extra por resolver disputas.
 
 ## Evidencia del chat
 

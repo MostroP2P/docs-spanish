@@ -4,7 +4,7 @@ Mostro está diseñado para que los intercambios de bitcoin por monedas fiat sea
 
 Cada operador de un nodo de Mostro puede establecer sus plazos de tiempo para cada etapa del intercambio, lo que fomenta la competencia entre nodos de Mostro y permite a los usuarios seleccionar el que mejor se ajuste a sus necesidades.
 
-A continuación, se detallan los diferentes plazos de el nodo de Mostro actualmente activo en mainnet (`npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`). A medida que existan más nodos de Mostro, esta información deberá ser accesible a los usuarios para que puedan elegir la que prefieran.
+A continuación, se detallan los diferentes plazos del nodo de Mostro actualmente activo en mainnet (`npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`). A medida que existan más nodos de Mostro, esta información deberá ser accesible a los usuarios para que puedan elegir el que prefieran.
 
 Al publicar una oferta, esta permanece en el libro de órdenes hasta *23 horas*. Si nadie la toma durante ese tiempo, se eliminará automáticamente.
 
