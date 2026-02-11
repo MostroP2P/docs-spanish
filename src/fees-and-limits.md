@@ -6,7 +6,7 @@ Cada operador de una instancia de Mostro puede establecer sus propias tarifas (f
 
 Las tarifas se cobran tanto al comprador como al vendedor por cada transacción completada. El porcentaje exacto depende de la instancia de Mostro que utilices.
 
-La instancia de Mostro actualmente activa en mainnet (`npub1ykvsmrmw2hk7jgxgy64zr8tfkx4nnjhq9eyfxdlg3caha3ph0skq6jr3z0`) cobra una tarifa del 0.3% tanto al comprador como al vendedor.
+La instancia de Mostro actualmente activa en mainnet (`npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`) cobra una tarifa del 0.3% tanto al comprador como al vendedor.
 
 ## Límites
 
@@ -31,4 +31,4 @@ Cada instancia de Mostro contribuye automáticamente un porcentaje de sus gananc
 
 Este sistema garantiza la sostenibilidad del desarrollo de Mostro de forma transparente: todas las contribuciones se publican como eventos en Nostr y pueden ser verificadas por cualquiera.
 
-Para más detalles sobre cómo funciona este sistema, puedes leer el artículo completo: [Financiamiento sostenible para el desarrollo de Mostro](https://mostro.network/blog/dev-fee-sostenibilidad/)
+Para más detalles sobre cómo funciona este sistema, puedes leer el artículo completo: [Financiamiento sostenible para el desarrollo de Mostro](https://mostro.network/blog/es/dev-fee-sostenibilidad)

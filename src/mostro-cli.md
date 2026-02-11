@@ -38,8 +38,8 @@ Requisitos: Rust 1.64 o superior.
 
 ```bash
 # Configurar variables de entorno
-export MOSTRO_PUBKEY=npub1ykvsmrmw2hk7jgxgy64zr8tfkx4nnjhq9eyfxdlg3caha3ph0skq6jr3z0
-export RELAYS='wss://relay.mostro.network,wss://relay.damus.io'
+export MOSTRO_PUBKEY=npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr
+export RELAYS='wss://relay.mostro.network,wss://nos.lol'
 
 # Listar órdenes disponibles
 mostro-cli listorders
