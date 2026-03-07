@@ -2,6 +2,14 @@
 
 [Inicio Rápido 🚀](README.md)
 
+---
+
+- [Especificación del Protocolo (Desarrolladores)](https://mostro.network/protocol/)
+- [Corre Tu Propio Nodo](https://mostro.community/guide)
+- [English Guide](https://mostro.network/docs-english/)
+
+---
+
 - [Preguntas Frecuentes](./faq.md)
 	- [¿Qué es Mostro?](./what-is-mostro.md)
 	- [¿Qué necesito para usar Mostro?](./need-it.md)
