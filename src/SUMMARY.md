@@ -4,12 +4,6 @@
 
 ---
 
-- [Especificación del Protocolo (Desarrolladores)](https://mostro.network/protocol/)
-- [Corre Tu Propio Nodo](https://mostro.community/guide)
-- [English Guide](https://mostro.network/docs-english/)
-
----
-
 - [Preguntas Frecuentes](./faq.md)
 	- [¿Qué es Mostro?](./what-is-mostro.md)
 	- [¿Qué necesito para usar Mostro?](./need-it.md)
@@ -19,6 +13,7 @@
 	- [Tarifas y Límites de Intercambios](./fees-and-limits.md)
 	- [¿Puedo cancelar una orden?](./cancelling-an-order.md)
 	- [Hold Invoices: Seguridad de los Intercambios](./hold-invoice.md)
+	- [Depósito Anti-Abuso](./anti-abuse-bond.md)
 	- [Tiempo de Intercambio](./times.md)
 	- [Sistema de Reputación](./reputation.md)
 	- [Gestión de Disputas](./disputes.md)
