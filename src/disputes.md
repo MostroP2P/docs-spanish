@@ -24,3 +24,7 @@ Para más detalles sobre cómo funciona este sistema de privacidad, consulta la 
 Las disputas no se abren automáticamente en ningún caso. Los usuarios involucrados deben iniciarlas antes de que expire la [hold invoice](./hold-invoice.md) que el vendedor ha pagado, de forma que el administrador tenga tiempo suficiente para solicitar pruebas a ambas partes y tomar una decisión adecuada.
 
 El tiempo sigue corriendo desde que se aceptó la orden y no se detiene por abrir una disputa. El administrador debe resolverla antes de que el tiempo expire, por lo que los usuarios no deben esperar demasiado para iniciarla. Puedes leer más sobre los plazos de tiempo [aquí](./times.md).
+
+## Depósito anti-abuso en disputas
+
+Si operas en un nodo que exige un [depósito anti-abuso](./anti-abuse-bond.md), el administrador puede cobrar el depósito de quien haya actuado de mala fe al resolver la disputa. Parte de ese depósito se entrega a la contraparte honesta como compensación. Consulta [Depósito Anti-Abuso](./anti-abuse-bond.md) para conocer cómo funciona.
