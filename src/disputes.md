@@ -4,7 +4,7 @@ Si tu contraparte no responde, sospechas de un intento de estafa, o surge un mal
 
 ## Cómo funciona
 
-Cuando inicies una disputa, serás atendido por el administrador del nodo de Mostro que estés utilizando, o por una persona designada por dicho administrador (solver). Al abrir la disputa, Mostro te proporcionará un número de token único, y tu contraparte recibirá uno diferente. Ambos tokens serán revelados al administrador que gestione la disputa. Cuando el administrador se ponga en contacto contigo y con tu contraparte, te dirá cuál es tu token, lo que te permitirá verificar que es la persona designada y asegurarte de que no se trata de un impostor.
+Cuando inicies una disputa, serás atendido por el administrador del nodo de Mostro que estés utilizando, o por una persona designada por dicho administrador (solver). Cuando un solver toma la disputa, Mostro te envía a ti y a tu contraparte un mensaje con la clave pública de ese solver, para que tu cliente sepa con quién hablar en el chat de la disputa. Sigue solo las instrucciones del solver que Mostro asignó: cualquier otra persona que te escriba sobre la disputa puede ser un impostor.
 
 ## Resolución
 
@@ -34,7 +34,7 @@ Poco antes de que expire la hold invoice, Mostro revisa la orden. Si todavía es
 Lo que debes saber sobre esta disputa automática:
 
 - Se registra a nombre del comprador, porque lo que está en juego es su pago. El comprador la verá como una disputa propia, y el vendedor la verá como una disputa abierta por su contraparte.
-- Funciona como cualquier otra disputa: ambas partes reciben su token y son atendidas por un administrador o solver.
+- Funciona como cualquier otra disputa: un administrador o solver la toma y atiende a ambas partes.
 - El administrador tiene muy poco tiempo para resolverla antes de que expire la hold invoice: 12 bloques con la configuración por defecto. En teoría son 120 minutos, porque se mina un bloque cada 10 minutos en promedio, pero los bloques no llegan a intervalos fijos, así que ese tiempo puede ser mayor o menor. Si ese tiempo se agota, los Sats vuelven al vendedor y Mostro ya no puede intervenir. No esperes a la disputa automática: si tu contraparte deja de responder, abre tú la disputa lo antes posible.
 - Si el comprador nunca marcó el fiat como enviado, Mostro no abre una disputa. Cancela la orden antes de que expire la hold invoice, y los Sats vuelven al vendedor.
 
