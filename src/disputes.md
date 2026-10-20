@@ -29,13 +29,13 @@ El tiempo sigue corriendo desde que se aceptó la orden y no se detiene por abri
 
 Mostro abre una disputa por su cuenta en un único caso: el comprador marcó el fiat como enviado, el vendedor no ha liberado los Sats y la [hold invoice](./hold-invoice.md) está por expirar.
 
-Unas horas antes de que expire la hold invoice (24 bloques, unas 4 horas, con la configuración por defecto), Mostro revisa la orden. Si todavía está esperando que el vendedor libere los Sats, Mostro abre una disputa para que un administrador pueda decidir mientras los Sats siguen bloqueados. De lo contrario, la hold invoice expiraría y los Sats volverían al vendedor, aunque el comprador ya hubiera enviado el fiat.
+Poco antes de que expire la hold invoice, Mostro revisa la orden. Si todavía está esperando que el vendedor libere los Sats, Mostro abre una disputa para que un administrador pueda decidir mientras los Sats siguen bloqueados. Sin esa disputa, la hold invoice expiraría y los Sats volverían al vendedor, aunque el comprador ya hubiera enviado el fiat.
 
 Lo que debes saber sobre esta disputa automática:
 
 - Se registra a nombre del comprador, porque lo que está en juego es su pago. El comprador la verá como una disputa propia, y el vendedor la verá como una disputa abierta por su contraparte.
 - Funciona como cualquier otra disputa: ambas partes reciben su token y son atendidas por un administrador o solver.
-- El administrador tiene muy poco tiempo para resolverla, unas dos horas, antes de que expire la hold invoice. Si ese tiempo se agota, los Sats vuelven al vendedor y Mostro ya no puede intervenir. No esperes a la disputa automática: si tu contraparte deja de responder, abre tú la disputa lo antes posible.
+- El administrador tiene muy poco tiempo para resolverla antes de que expire la hold invoice: unas dos horas con la configuración por defecto, aunque ese plazo depende de cómo esté configurado el nodo. Si ese tiempo se agota, los Sats vuelven al vendedor y Mostro ya no puede intervenir. No esperes a la disputa automática: si tu contraparte deja de responder, abre tú la disputa lo antes posible.
 - Si el comprador nunca marcó el fiat como enviado, Mostro no abre una disputa. Cancela la orden antes de que expire la hold invoice, y los Sats vuelven al vendedor.
 
 ## Depósito anti-abuso en disputas
