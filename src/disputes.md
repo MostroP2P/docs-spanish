@@ -35,7 +35,7 @@ Lo que debes saber sobre esta disputa automática:
 
 - Se registra a nombre del comprador, porque lo que está en juego es su pago. El comprador la verá como una disputa propia, y el vendedor la verá como una disputa abierta por su contraparte.
 - Funciona como cualquier otra disputa: ambas partes reciben su token y son atendidas por un administrador o solver.
-- El administrador tiene muy poco tiempo para resolverla antes de que expire la hold invoice: unas dos horas con la configuración por defecto, aunque ese plazo depende de cómo esté configurado el nodo. Si ese tiempo se agota, los Sats vuelven al vendedor y Mostro ya no puede intervenir. No esperes a la disputa automática: si tu contraparte deja de responder, abre tú la disputa lo antes posible.
+- El administrador tiene muy poco tiempo para resolverla antes de que expire la hold invoice: 12 bloques con la configuración por defecto. En teoría son 120 minutos, porque se mina un bloque cada 10 minutos en promedio, pero los bloques no llegan a intervalos fijos, así que ese tiempo puede ser mayor o menor. Si ese tiempo se agota, los Sats vuelven al vendedor y Mostro ya no puede intervenir. No esperes a la disputa automática: si tu contraparte deja de responder, abre tú la disputa lo antes posible.
 - Si el comprador nunca marcó el fiat como enviado, Mostro no abre una disputa. Cancela la orden antes de que expire la hold invoice, y los Sats vuelven al vendedor.
 
 ## Depósito anti-abuso en disputas
