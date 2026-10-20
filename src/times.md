@@ -10,7 +10,12 @@ Al publicar una oferta, esta permanece en el libro de órdenes hasta *23 horas*.
 
 Una vez que alguien toma una oferta, tiene hasta *15 minutos* para pagar la hold invoice si es el vendedor, o proporcionar una invoice si es el comprador. Si no cumple con su parte en ese tiempo, la orden se volverá a publicar automáticamente. Pero si cumple, luego la contraparte tendrá hasta *15 minutos* para completar su acción correspondiente (pagar la [hold invoice](./hold-invoice.md) o proporcionar una factura, según su rol en el intercambio). Si este no lo hace, la orden será cancelada y no se republicará.
 
-Después de que el vendedor paga la hold invoice y el comprador proporciona su factura, tienen tiempo para concretar el intercambio hasta que expire la [hold invoice](./hold-invoice.md) que Mostro le proporcionó al vendedor. En el nodo de Mostro `npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr` este plazo es de *24 horas* aproximadamente. Durante este tiempo, el comprador debe enviar el pago en fiat y el vendedor liberar los Sats al confirmar la recepción del fiat. Si se excede ese plazo, la orden expirará y los Sats serán devueltos a la wallet de origen sin que Mostro pueda hacer nada al respecto. Por esta razón, se recomienda utilizar únicamente métodos de pago fiat instantáneos.
+Después de que el vendedor paga la hold invoice y el comprador proporciona su factura, tienen tiempo para concretar el intercambio hasta poco antes de que expire la [hold invoice](./hold-invoice.md) que Mostro le proporcionó al vendedor. En el nodo de Mostro `npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr` la hold invoice tiene una validez de *2 días* aproximadamente, y Mostro interviene unas *4 horas* antes de que expire, es decir, unas *46 horas* después de que el vendedor pagó. Durante este tiempo, el comprador debe enviar el pago en fiat y el vendedor liberar los Sats al confirmar la recepción del fiat. Por esta razón, se recomienda utilizar únicamente métodos de pago fiat instantáneos.
+
+Si el intercambio no se ha completado cuando Mostro interviene:
+
+- Si el comprador no ha marcado el fiat como enviado, Mostro cancela la orden y los Sats son devueltos a la wallet del vendedor.
+- Si el comprador ya marcó el fiat como enviado, Mostro [abre una disputa automáticamente](./disputes.md#disputa-automática), para que un administrador pueda resolverla en el poco tiempo que queda antes de que expire la hold invoice.
 
 Dentro de este período de validez, los usuarios pueden finalizar satisfactoriamente el intercambio, [cancelarlo](./cancelling-an-order.md) cooperativamente, o abrir una [disputa](./disputes.md). Luego de que la [hold invoice](./hold-invoice.md) expire, Mostro no tiene capacidad de intervenir en esa orden.
 
