@@ -2,7 +2,7 @@
 
 [Mostro App](https://github.com/MostroP2P/app) es la aplicación oficial para usar Mostro. Está disponible para Android, Windows, macOS, Linux y la web, y próximamente para iOS.
 
-![mostro-mobile](./assets/images/mostro-mobile.gif)
+![Libro de órdenes de Mostro App](./assets/images/mostro-app.png)
 
 ## Descargas
 
@@ -32,10 +32,12 @@
 - Configura tu Lightning Address en la app
 - Al comprar sats, la app usa automáticamente tu Lightning Address
 - No necesitas generar invoices manualmente
+- Soporte de Nostr Wallet Connect (NWC) para generar invoices automáticamente
 
 ### Comunicación
 
 - Chat cifrado de extremo a extremo con tu contraparte
+- Envío de imágenes y archivos cifrados en el chat
 - Chat con el solver durante disputas
 - Los mensajes no pueden ser borrados ni alterados
 
@@ -53,7 +55,7 @@
 
 ### Multi-idioma
 
-- Disponible en español, inglés e italiano
+- Disponible en español, inglés, francés, alemán, italiano, neerlandés y portugués
 
 ### Múltiples nodos
 
