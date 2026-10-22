@@ -1,12 +1,14 @@
 # Mostro Mobile
 
-[Mostro Mobile](https://github.com/MostroP2P/mobile) es la aplicación móvil oficial para usar Mostro. Está disponible para Android y próximamente para iOS.
+[Mostro App](https://github.com/MostroP2P/app) es la aplicación oficial para usar Mostro. Está disponible para Android, Windows, macOS, Linux y la web, y próximamente para iOS.
 
-![mostro-mobile](./assets/images/mostro-mobile.gif)
+![Libro de órdenes de Mostro App](./assets/images/mostro-app.png)
 
 ## Descargas
 
-- Android: [GitHub Releases](https://github.com/MostroP2P/mobile/releases) o [Zapstore](https://zapstore.dev/apps/naddr1qvzqqqr7pvpzpklqkxldpq25w5qa4hlp7sx636su084zqg2p6skc446x7rav5w56qqfxuet5wahhy6ewd4hhxarjduhxzurssulxpx)
+- Android: [GitHub Releases](https://github.com/MostroP2P/app/releases/latest) o [Zapstore](https://zapstore.dev/apps/foundation.mostro.app)
+- Windows, macOS y Linux: [GitHub Releases](https://github.com/MostroP2P/app/releases/latest)
+- Web: [mostro.network/app](https://mostro.network/app/)
 - iOS: Próximamente
 
 ## Características principales
@@ -30,10 +32,12 @@
 - Configura tu Lightning Address en la app
 - Al comprar sats, la app usa automáticamente tu Lightning Address
 - No necesitas generar invoices manualmente
+- Soporte de Nostr Wallet Connect (NWC) para generar invoices automáticamente
 
 ### Comunicación
 
 - Chat cifrado de extremo a extremo con tu contraparte
+- Envío de imágenes y archivos cifrados en el chat
 - Chat con el solver durante disputas
 - Los mensajes no pueden ser borrados ni alterados
 
@@ -51,7 +55,7 @@
 
 ### Multi-idioma
 
-- Disponible en español, inglés e italiano
+- Disponible en español, inglés, francés, alemán, italiano, neerlandés y portugués
 
 ### Múltiples nodos
 
@@ -69,5 +73,5 @@
 
 ## Más información
 
-- Repositorio: [https://github.com/MostroP2P/mobile](https://github.com/MostroP2P/mobile)
-- Reportar bugs: [GitHub Issues](https://github.com/MostroP2P/mobile/issues)
+- Repositorio: [https://github.com/MostroP2P/app](https://github.com/MostroP2P/app)
+- Reportar bugs: [GitHub Issues](https://github.com/MostroP2P/app/issues)
