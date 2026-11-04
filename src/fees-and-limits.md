@@ -4,13 +4,15 @@ Cada operador de un nodo de Mostro puede establecer sus propias tarifas (fees) y
 
 ## Tarifas
 
-Las tarifas se cobran tanto al comprador como al vendedor por cada transacción completada. El porcentaje exacto depende del nodo de Mostro que utilices.
+La tarifa del nodo se divide por la mitad entre el comprador y el vendedor en cada transacción completada. El porcentaje exacto depende del nodo de Mostro que utilices: la mayoría de los nodos comunitarios cobran entre 0.5% y 1% en total.
 
-El nodo de Mostro actualmente activo en mainnet (`npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`) cobra una tarifa del 0.3% tanto al comprador como al vendedor.
+Por ejemplo, un nodo con una tarifa del 1% cobra 0.5% al comprador y 0.5% al vendedor. La [Mostro App](./mostro-mobile.md) muestra la tarifa **total** de cada nodo, en *Configuración → Red → Nodo Mostro* y en *Acerca de → Nodo conectado*. Cuando pagas la hold invoice como vendedor, la app te dice cuántos sats de ella corresponden a la tarifa.
+
+Resolver una [disputa](./disputes.md) no tiene ningún costo extra. El [depósito anti-abuso](./anti-abuse-bond.md) que piden algunos nodos no es una tarifa: lo recuperas cuando operas de buena fe.
 
 ## Límites
 
-Cada nodo también define los montos mínimos y máximos permitidos por operación. El nodo principal en mainnet permite intercambios desde 100 sats hasta 20,000 sats por operación.
+Cada nodo también define los montos mínimos y máximos en sats permitidos por operación. Puedes verlos en la app en *Acerca de → Nodo conectado* (*Orden mínima* y *Orden máxima*), y la app comprueba tu orden contra ellos antes de publicarla.
 
 ## Múltiples nodos de Mostro
 
@@ -20,6 +22,8 @@ Mostro está diseñado para ser un sistema descentralizado donde múltiples oper
 - Cada operador define sus propias tarifas, límites y monedas aceptadas
 - Los usuarios eligen libremente en qué nodo operar
 - Si un nodo deja de funcionar, otros siguen disponibles
+
+Puedes comprobar si un nodo está funcionando en la [página de estado](./node-status.md).
 
 ## Contribución al desarrollo
 
