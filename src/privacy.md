@@ -1,7 +1,7 @@
 # Privacidad en Mostro
 
 ## Privacidad en la comunicación del usuario con Mostro
-La comunicación entre Mostrod y los usuarios se realiza a través de los [clientes de Mostro](./clients.md) mediante el protocolo v2 de Mostro: cada mensaje es un evento de Nostr firmado de tipo 14 cuyo contenido está cifrado con [NIP-44](https://github.com/nostr-protocol/nips/blob/master/44.md), de modo que solo el nodo puede leerlo. Para aumentar la privacidad, los clientes de Mostro generan automáticamente una nueva clave para cada orden que tomes o crees, y esa clave firma tus mensajes. Los relays pueden ver que una clave de un solo uso habla con un nodo de Mostro, pero no lo que dice, y las transacciones de compra y venta no pueden asociarse desde afuera a una sola persona.
+La comunicación entre Mostrod y los usuarios se realiza a través de los [clientes de Mostro](./clients.md) mediante el protocolo v2 de Mostro: cada mensaje es un evento de Nostr firmado de tipo 14 cuyo contenido está cifrado con [NIP-44](https://github.com/nostr-protocol/nips/blob/master/44.md), de modo que solo tu cliente y el nodo pueden leerlo. Para aumentar la privacidad, los clientes de Mostro generan automáticamente una nueva clave para cada orden que tomes o crees, y esa clave firma tus mensajes. Los relays pueden ver que una clave de un solo uso habla con un nodo de Mostro, pero no lo que dice, y las transacciones de compra y venta no pueden asociarse desde afuera a una sola persona.
 
 Los clientes de Mostro no compartirán las claves privadas de los usuarios con un nodo de Mostro, y por consiguiente con su administrador, en ningún caso.
 

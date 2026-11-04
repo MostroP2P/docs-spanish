@@ -32,7 +32,7 @@ Si necesitas cambiar de dispositivo, reinstalar la app, o usar un cliente difere
 Al restaurar:
 
 - Recuperas tu identidad y reputación
-- Puedes continuar trades que estaban activos
+- En la Mostro App, puedes continuar las operaciones que estaban activas (solo en modo reputación). mostro-cli no puede retomar una operación en curso solo con las 12 palabras: para eso necesita su archivo `~/.mcli/mcli.db`
 - Accedes desde cualquier cliente de Mostro compatible
 
 En la Mostro App, ve a *Cuenta → Importar usuario de Mostro* e ingresa tus 12 palabras. La app consulta al nodo que usas por tus órdenes y operaciones y las reconstruye. La restauración funciona por nodo: cuando cambias a otro nodo, la app restaura también lo que tienes allí. Antes de importar, si el usuario actual todavía tiene operaciones en curso, la app te avisa que *"Este usuario todavía tiene sats en juego"*.

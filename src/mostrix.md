@@ -15,6 +15,7 @@ Hay binarios precompilados para Linux, macOS, FreeBSD y Windows en [GitHub Relea
 
 ```bash
 sed 's#  artifact-[^/]*/#  #' manifest.txt | sha256sum -c --ignore-missing
+# macOS: reemplaza sha256sum -c por shasum -a 256 -c
 ```
 
 O compílalo desde el código fuente (requiere Rust 1.97 o superior):
@@ -54,7 +55,7 @@ Parámetros principales de `settings.toml`:
 - `currencies_filter`: monedas a mostrar; vacío muestra todas
 - `user_mode`: `user` o `admin` (o **Settings → Switch Mode**)
 - `ln_address`: tu Lightning Address
-- `admin_privkey`: para solvers, la clave registrada como solver en el nodo
+- `admin_privkey`: para solvers, la clave registrada como solver en el nodo; para el operador del nodo, la clave privada del propio daemon de Mostro (la que corresponde a `mostro_pubkey`), necesaria para agregar solvers
 
 Usa las flechas para moverte entre pestañas, Ctrl+H para la ayuda contextual y la pestaña **Exit** para salir.
 
