@@ -20,7 +20,7 @@ Solo los nodos cuyo operador las habilitó. La [Mostro App](./mostro-mobile.md) 
 ## Cómo funciona el precio
 
 - **Las monedas estables** valen un dólar cada una, así que una orden en USDT se cotiza exactamente igual que una orden en USD. La [prima o descuento](./fees-and-limits.md) funciona igual.
-- **BTC, LBTC y RBTC** se cuentan 1:1 en sats. Una orden por 100,000 significa 100,000 sats de ese activo (0.001 RBTC). A precio de mercado, la prima es el precio del swap: si vendes 100,000 sats de RBTC con una prima del 1%, bloqueas 99,000 sats de Lightning y recibes 100,000 sats de RBTC. En la app ingresas estos montos en sats.
+- **BTC, LBTC y RBTC** se cuentan 1:1 en sats. Una orden por 100,000 significa 100,000 sats de ese activo (0.001 RBTC). A precio de mercado, la prima es el precio del swap: si vendes sats de Lightning en una orden por 100,000 sats de RBTC con una prima del 1%, bloqueas 99,000 sats de Lightning y recibes 100,000 sats de RBTC. En la app ingresas estos montos en sats.
 - Si un nodo acepta un código pero no lo cotiza a precio de mercado, la app te avisa: *"Este nodo no cotiza {code} a precio de mercado. Indica un monto fijo en sats."* (con el código en lugar de `{code}`).
 
 La [tarifa](./fees-and-limits.md) habitual de Mostro se aplica además, como en cualquier operación.
