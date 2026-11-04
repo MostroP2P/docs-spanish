@@ -26,6 +26,7 @@ También hay binarios precompilados para Linux, FreeBSD y Windows en [GitHub Rel
 
 ```bash
 sed 's#  artifact-[^/]*/#  #' manifest.txt | sha256sum -c --ignore-missing
+# Windows (PowerShell): Get-FileHash <archivo> -Algorithm SHA256 y compáralo con manifest.txt
 ```
 
 ## Características

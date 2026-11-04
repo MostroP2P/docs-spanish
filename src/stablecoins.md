@@ -19,7 +19,7 @@ Solo los nodos cuyo operador las habilitó. La [Mostro App](./mostro-mobile.md) 
 
 ## Cómo funciona el precio
 
-- **Las monedas estables** valen un dólar cada una, así que una orden en USDT se cotiza exactamente igual que una orden en USD. La [prima o descuento](./fees-and-limits.md) funciona igual.
+- **Las monedas estables** valen un dólar cada una, así que una orden en USDT a precio de mercado se cotiza exactamente igual que una orden en USD. La [prima o descuento](./fees-and-limits.md) funciona igual.
 - **BTC, LBTC y RBTC** se cuentan 1:1 en sats. Una orden por 100,000 significa 100,000 sats de ese activo (0.001 RBTC). A precio de mercado, la prima es el precio del swap: si vendes sats de Lightning en una orden por 100,000 sats de RBTC con una prima del 1%, bloqueas 99,000 sats de Lightning y recibes 100,000 sats de RBTC. En la app ingresas estos montos en sats.
 - Si un nodo acepta un código pero no lo cotiza a precio de mercado, la app te avisa: *"Este nodo no cotiza {code} a precio de mercado. Indica un monto fijo en sats."* (con el código en lugar de `{code}`).
 
@@ -27,7 +27,7 @@ La [tarifa](./fees-and-limits.md) habitual de Mostro se aplica además, como en 
 
 ## El método de pago es la red
 
-El método de pago de la orden indica en qué red se paga el activo: por ejemplo `USDT (Tron)`, `USDT (Ethereum)`, `USDC (Base)`, `DOC (Rootstock)`, `BTC (On-chain)`, `LBTC (Liquid)` o `RBTC (Rootstock)`. Una orden puede listar varias redes; acuerden en el chat cuál usarán. Mostro no verifica la red ni la dirección.
+El método de pago de la orden indica en qué red se paga el activo: por ejemplo `USDT (Tron)`, `USDT (Ethereum)`, `USDC (Base)`, `DOC (Rootstock)`, `BTC (On-chain)`, `LBTC (Liquid)` o `RBTC (Rootstock)`. Una orden de monedas estables puede listar varias redes; acuerden en el chat cuál usarán. BTC, LBTC y RBTC ya indican su red en el código: no usen otra. Mostro no verifica la red ni la dirección.
 
 ## Paso a paso
 
@@ -35,7 +35,7 @@ El método de pago de la orden indica en qué red se paga el activo: por ejemplo
 
 1. Paga la [hold invoice](./hold-invoice.md) como en cualquier operación.
 2. Comparte tu dirección de recepción en el chat de la operación. Asegúrate de que sea una dirección de la red que acordaron.
-3. Cuando el comprador marque el pago como enviado, comprueba con el ID de transacción que pegó en el chat que llegó el monto completo **y que está confirmado**.
+3. Cuando el comprador marque el pago como enviado, comprueba con el ID de transacción que pegó en el chat (en Liquid, con el enlace sin cegar) que llegó el monto completo **y que está confirmado**.
 4. Solo entonces toca **Liberar sats**.
 
 **Si compras sats** (envías el activo):
@@ -58,4 +58,4 @@ Si algo sale mal, abre una [disputa](./disputes.md) como de costumbre. Aquí no 
 
 ## Otros clientes
 
-[mostro-cli](./mostro-cli.md) y [MostriX](./mostrix.md) por ahora solo pueden crear estas órdenes a precio fijo y no muestran los montos de BTC, LBTC y RBTC en sats. Las versiones anteriores de la app tienen la misma limitación.
+[mostro-cli](./mostro-cli.md) y [MostriX](./mostrix.md) por ahora solo pueden crear estas órdenes a precio fijo y no indican que los montos de BTC, LBTC y RBTC están en sats. El número que escribes y ves ahí sigue siendo en sats, aunque el cliente lo muestre como RBTC: `100000` significa 0.001 RBTC. Las versiones anteriores de la app tienen la misma limitación; ante la duda, usa una Mostro App actual para estas órdenes.

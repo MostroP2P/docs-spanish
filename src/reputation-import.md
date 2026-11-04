@@ -12,7 +12,7 @@ Viajan tres datos contigo:
 
 El origen los firma en un pequeño evento de Nostr, llamado atestación, dirigido a tu identidad de Mostro. Es válida por 7 días. El nodo en el que importas suma esos datos a la reputación que ya tienes allí. Tus contrapartes ven una sola calificación, un solo número de reseñas y una sola fecha de "operando desde". Nada indica que un dato fue importado.
 
-> **Ejemplo:** tienes 2 calificaciones con promedio 4.5 en un nodo de Mostro e importas 214 calificaciones con promedio 4.87 desde lnp2pBot. Tus contrapartes en ese nodo ahora ven cerca de 4.87 con 216 calificaciones, y operando desde la fecha de tu primera operación en lnp2pBot.
+> **Ejemplo:** tienes 2 calificaciones con promedio 4.5 en un nodo de Mostro e importas 214 calificaciones con promedio 4.87 desde lnp2pBot. Tus contrapartes en ese nodo ahora ven cerca de 4.87 con 216 calificaciones, y operando desde la más antigua de tus dos primeras operaciones (aquí, la primera en lnp2pBot).
 
 ## Antes de empezar
 
@@ -44,7 +44,7 @@ También puedes llevar la reputación que ganaste en un nodo de Mostro (A) a otr
 1. Selecciona el nodo A. Ve a *Configuración → Red → Reputación → Exportar mi reputación* y toca **Exportar mi reputación**. Deja vacío el campo de autorización.
 2. Confirma la identidad en *"¿Exportar a esta identidad?"* con **Exportar**. La app indica que tu reputación está lista y es válida por 7 días.
 3. Selecciona el nodo B en *Configuración → Red → Nodo Mostro*.
-4. Abre *Reputación → Importar reputación*. La atestación ya está rellenada y comprobada.
+4. Abre *Configuración → Red → Reputación → Importar reputación*. La atestación ya está rellenada y comprobada.
 5. Toca **Importar en este Mostro**.
 
 El nodo A exporta solo la reputación que ganaste **en el nodo A**: al menos 10 operaciones completadas y 5 calificaciones recibidas allí. La reputación que importaste al nodo A no vuelve a viajar.

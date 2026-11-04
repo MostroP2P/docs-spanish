@@ -4,7 +4,7 @@ Antes de operar, o cuando algo tarda más de lo normal, puedes revisar el estado
 
 **[status.mostro.network](https://status.mostro.network)**
 
-Cada minuto, cada nodo publica en Nostr un reporte de salud firmado. La página lee esos reportes directamente de los relays, los verifica en tu navegador y compara el nodo de Lightning de cada nodo con exploradores de bloques públicos.
+Cada minuto, cada nodo publica en Nostr un reporte de salud firmado. La página lee esos reportes directamente de los relays, los verifica en tu navegador y compara el nodo de Lightning de cada nodo monitoreado con exploradores de bloques públicos.
 
 | Color | Significado |
 |---|---|
@@ -21,7 +21,7 @@ Un nodo en mantenimiento no acepta órdenes ni tomas nuevas, pero las operacione
 
 ## Si tus sats se retrasan
 
-Si el propio nodo de Lightning del nodo tiene un problema, Mostro no abandona tu pago: espera y paga automáticamente cuando el problema se resuelve, y ese retraso no cuenta como un pago fallido de tu parte. Si el nodo permanece en rojo por mucho tiempo, contacta a su operador (consulta [Soporte y Contacto](./support-and-contacts.md)).
+Si el propio nodo de Lightning del nodo tiene un problema, Mostro no abandona tu pago: espera y paga automáticamente cuando el problema se resuelve, y ese retraso no cuenta como un pago fallido de tu parte. Si tu pago falla por otro motivo, por ejemplo un problema de ruta, Mostro reintenta unas veces y luego te pide una factura nueva: mantén la app abierta y envíala, o el pago no podrá completarse. Si el nodo permanece en rojo por mucho tiempo, contacta a su operador (consulta [Soporte y Contacto](./support-and-contacts.md)).
 
 ## Comparar nodos en la app
 

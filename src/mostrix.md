@@ -16,6 +16,7 @@ Hay binarios precompilados para Linux, macOS, FreeBSD y Windows en [GitHub Relea
 ```bash
 sed 's#  artifact-[^/]*/#  #' manifest.txt | sha256sum -c --ignore-missing
 # macOS: reemplaza sha256sum -c por shasum -a 256 -c
+# Windows (PowerShell): Get-FileHash <archivo> -Algorithm SHA256 y compáralo con manifest.txt
 ```
 
 O compílalo desde el código fuente (requiere Rust 1.97 o superior):
