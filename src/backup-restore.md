@@ -12,7 +12,11 @@ Sin un backup de tu frase de 12 palabras, podrías perder:
 
 ## Cómo hacer backup
 
-Cada [cliente de Mostro](./clients.md) tiene su propia forma de mostrarte y respaldar tu frase de 12 palabras. Consulta la documentación del cliente que utilices para saber cómo hacerlo.
+En la [Mostro App](./mostro-mobile.md), ve a *Cuenta → Palabras secretas* y toca **Mostrar palabras**. La app te guía en tres pasos: anota las 12 palabras en papel, toca tres de ellas para comprobar que las anotaste bien, y listo. Hasta que lo hagas, la app te lo recuerda con un banner *Asegura tu reputación*.
+
+La app no incluye tus claves en el backup en la nube de tu teléfono ni en la transferencia de dispositivo, así que las 12 palabras son la única forma de recuperar tu cuenta en un dispositivo nuevo.
+
+Otros [clientes de Mostro](./clients.md) tienen su propia forma de mostrar tu frase de 12 palabras. Consulta su documentación.
 
 Lo importante es:
 
@@ -28,16 +32,18 @@ Si necesitas cambiar de dispositivo, reinstalar la app, o usar un cliente difere
 Al restaurar:
 
 - Recuperas tu identidad y reputación
-- Puedes continuar trades que estaban activos
+- En la Mostro App, puedes continuar las operaciones que estaban activas (solo en modo reputación). mostro-cli no puede retomar una operación en curso solo con las 12 palabras: para eso necesita su archivo `~/.mcli/mcli.db`
 - Accedes desde cualquier cliente de Mostro compatible
 
-El proceso exacto de restauración depende del cliente que utilices. Consulta la documentación específica del cliente para los pasos detallados.
+En la Mostro App, ve a *Cuenta → Importar usuario de Mostro* e ingresa tus 12 palabras. La app consulta al nodo que usas por tus órdenes y operaciones y las reconstruye. La restauración funciona por nodo: cuando cambias a otro nodo, la app restaura también lo que tienes allí. Antes de importar, si el usuario actual todavía tiene operaciones en curso, la app te avisa que *"Este usuario todavía tiene sats en juego"*.
 
-## Importante: Modo de privacidad completa
+Si usabas la antigua app Mostro Mobile, puedes importar las mismas 12 palabras en la nueva Mostro App: ambas usan las mismas claves. Termina primero cualquier operación abierta en la app antigua.
 
-Si operas en [modo de privacidad completa](./privacy.md), las órdenes creadas en ese modo no se pueden recuperar al restaurar tu cuenta. Solo las órdenes creadas en modo de reputación pueden ser restauradas.
+## Importante: Modo de privacidad total
 
-Esto se debe a que en el modo de privacidad completa no existe una clave fija asociada a tu identidad, por lo que Mostro no puede vincular esas operaciones con tu cuenta restaurada.
+Si operas en [modo de privacidad total](./privacy.md), las órdenes creadas en ese modo no se pueden recuperar al restaurar tu cuenta. Solo las órdenes creadas en modo de reputación pueden ser restauradas.
+
+Esto se debe a que en el modo de privacidad total no existe una clave fija asociada a tu identidad, por lo que Mostro no puede vincular esas operaciones con tu cuenta restaurada.
 
 ## Recomendaciones
 

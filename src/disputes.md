@@ -6,6 +6,19 @@ Si tu contraparte no responde, sospechas de un intento de estafa, o surge un mal
 
 Cuando inicies una disputa, serás atendido por el administrador del nodo de Mostro que estés utilizando, o por una persona designada por dicho administrador (solver). Cuando un solver toma la disputa, Mostro te envía a ti y a tu contraparte un mensaje con la clave pública de ese solver, para que tu cliente sepa con quién hablar en el chat de la disputa. Sigue solo las instrucciones del solver que Mostro asignó: cualquier otra persona que te escriba sobre la disputa puede ser un impostor.
 
+En la [Mostro App](./mostro-mobile.md), toca **Abrir disputa** en la pantalla de la operación. La disputa aparece entonces en *Chat → Disputas*, mostrando *"Esperando que se asigne un resolutor"* hasta que un solver la toma. Desde allí hablas con el solver y puedes adjuntar fotos o archivos PDF como evidencia.
+
+Mientras la disputa está abierta, aún pueden arreglar las cosas entre ustedes: si el vendedor libera los sats, o ambos acuerdan una [cancelación cooperativa](./cancelling-an-order.md), la disputa se cierra sola.
+
+## Serbero, el asistente automático
+
+Algunos nodos usan a Serbero, un asistente automático administrado por el operador del nodo. Si el tuyo lo hace, Serbero puede ser el primero en tomar tu disputa. Te escribe en el chat de la disputa, se presenta como un asistente automático y hace una pregunta corta a la vez: al comprador si envió el pago, al vendedor si le llegó. La Mostro App identifica sus mensajes como "Serbero".
+
+- Serbero no puede mover fondos y nunca decide quién tiene la razón. Mostro lo registra con permiso de solo lectura.
+- Si los hechos del pago están claros, aún pueden terminar la operación ustedes mismos: el vendedor puede liberar los sats, o ambos pueden acordar una cancelación cooperativa. Cualquiera de las dos cierra la disputa.
+- De lo contrario, o si pides una persona en cualquier momento, Serbero pasa el caso a un solver humano con un resumen de lo que dijo cada uno. La app muestra cuándo un solver toma el relevo.
+- Para entender tus respuestas, tus mensajes a Serbero son procesados por un servicio automatizado que usa el operador. Recibe el texto, los roles en la operación, el monto, la moneda y el método de pago, nunca tus claves públicas.
+
 ## Resolución
 
 No hay un método estándar para resolver disputas en todos los nodos de Mostro. Cada administrador puede decidir cómo gestionar las disputas generadas en su nodo y qué pruebas solicitar a los usuarios para tomar la decisión más adecuada.
@@ -16,7 +29,7 @@ Cuando el administrador decida qué usuario tiene la razón, hará que Mostro li
 
 Durante una operación, el comprador y el vendedor se comunican a través de un chat cifrado de extremo a extremo. Este chat genera una "llave maestra compartida" que solo conocen ambas partes.
 
-Si hay una disputa, cualquiera de las partes puede optar por compartir voluntariamente esta llave con el solver. Con ella, el solver puede acceder a una copia de la conversación que no puede ser alterada ni borrada. Esto permite resolver disputas de manera justa, exponiendo cualquier intento de engaño.
+Si hay una disputa, cualquiera de las partes puede optar por compartir voluntariamente esta llave con el solver. En la Mostro App es el botón **Compartir la clave del chat con el resolutor** en la disputa: cubre solo el chat de esa operación y no se puede deshacer. Con ella, el solver puede acceder a una copia de la conversación que no puede ser alterada ni borrada. Esto permite resolver disputas de manera justa, exponiendo cualquier intento de engaño.
 Para más detalles sobre cómo funciona este sistema de privacidad, consulta la sección de [Privacidad en Mostro](./privacy.md).
 
 ## Tiempos importantes

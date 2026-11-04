@@ -9,16 +9,20 @@ En este sitio encontrarás información sobre cómo utilizar [Mostro](https://mo
 2. **Abre algún [cliente de Mostro](./clients.md).** 
 
 3. **Sigue las instrucciones del [cliente](./clients.md):**
-   - Loguéate con una clave de Nostr, algunos [clientes de Mostro](./clients.md) la crearán para ti! 
+   - La [Mostro App](./mostro-mobile.md) crea tu identidad por ti: haz backup de sus 12 palabras antes de tu primera operación.
+   - Elige el nodo de Mostro en el que quieres operar.
    - Encuentra o crea ofertas de compra/venta de bitcoin.
    - Espera por un usuario interesado.
    - Si estás comprando Sats, envía la invoice donde recibirás los sats.
    - Si estás vendiendo Sats, paga la [hold invoice](./hold-invoice.md) (los sats quedarán retenidos en tu wallet hasta el final del proceso).
+   - Algunos nodos piden además un pequeño [depósito anti-abuso](./anti-abuse-bond.md), que recuperas cuando operas de buena fe.
    - Habla con tu contraparte. Acuerden cómo intercambiarse el fíat. Este es un proceso [privado](./privacy.md). 
    - Finaliza el intercambio.
    - Si tu contraparte no responde, inicia una [disputa](./disputes.md). 
    - [Califica](./reputation.md) a tu contraparte. Tú también serás [calificado](./reputation.md).
-   
+
+¿Ya tienes reputación en @lnp2pBot u otro nodo de Mostro? Puedes [llevarla contigo](./reputation-import.md).
+
 ## Recomendaciones
 
 - Si tienes alguna duda que no esté respondida en esta documentación puedes preguntar a [nuestra comunidad](./support-and-contacts.md).

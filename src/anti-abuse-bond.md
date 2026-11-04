@@ -8,7 +8,7 @@ No todos los nodos de Mostro exigen un depósito anti-abuso. Es una función que
 
 Cada nodo que lo active define sus propias reglas: a quién se lo pide (a quien crea la orden, a quien la toma, o a ambos) y de cuánto es. El monto suele ser un porcentaje pequeño del valor de la orden (por ejemplo, un 1%) con un mínimo en Sats, pero ese porcentaje lo decide cada nodo.
 
-> **Consejo:** Puedes consultar si el nodo que estás usando exige un depósito anti-abuso —y de cuánto sería— desde tu propio cliente de Mostro. Por ejemplo, en [Mostro Mobile](./mostro-mobile.md) puedes ir a la sección *Acerca de* y revisar esos detalles del nodo antes de operar.
+> **Consejo:** La [Mostro App](./mostro-mobile.md) llama al depósito anti-abuso simplemente **depósito**. Puedes consultar si un nodo exige uno —y de cuánto— antes de operar: la lista de nodos en *Configuración → Red → Nodo Mostro* muestra "Depósito X%" o "Sin depósito", *Acerca de → Nodo conectado* muestra el *Depósito*, y *Acerca de → Datos técnicos del nodo → Depósito antiabuso* muestra todas sus reglas. Las pantallas de crear y tomar una orden también te avisan cuando se aplica un depósito.
 
 ## ¿En qué se diferencia del escrow?
 
@@ -20,6 +20,7 @@ Recuperas el 100% de tu depósito siempre que cumplas tu parte: cuando completas
 
 - Completas el intercambio correctamente.
 - Cancelas la orden de forma cooperativa.
+- Creaste una orden y la cancelas antes de pagar el depósito, o antes de que alguien la tome.
 - Surge una disputa y el administrador no determina que hayas actuado de mala fe.
 
 En condiciones normales el depósito no representa ningún costo: vuelve íntegro a tu billetera, igual que los Sats bloqueados en una hold invoice.
@@ -45,4 +46,4 @@ Cuando se cobra un depósito, los Sats se reparten entre el nodo —que así fin
 
 ## Si te corresponde el depósito de tu contraparte
 
-Si tu contraparte pierde su depósito y a ti te toca una parte, tu cliente te pedirá una factura para enviarte esos Sats. Dispones de un plazo definido por el nodo (por ejemplo, 15 días) para reclamarla; si lo dejas pasar, pierdes el derecho a cobrar esa parte. Por eso conviene atender la solicitud de tu cliente cuando aparezca.
+Si tu contraparte pierde su depósito y a ti te toca una parte, tu cliente te pedirá una factura para enviarte esos Sats. En la Mostro App recibes una notificación y una acción **Reclamar pago**, que abre *Reclama tu parte* con el plazo; si conectaste una billetera mediante Nostr Wallet Connect, la factura se rellena por ti. Dispones de un plazo definido por el nodo (por ejemplo, 15 días) para reclamarla; si lo dejas pasar, pierdes el derecho a cobrar esa parte. Por eso conviene atender la solicitud de tu cliente cuando aparezca.

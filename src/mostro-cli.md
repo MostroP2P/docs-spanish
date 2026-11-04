@@ -20,7 +20,14 @@ cd mostro-cli
 cargo build --release
 ```
 
-Requisitos: Rust 1.64 o superior.
+Requisitos: Rust 1.97 o superior. En Debian/Ubuntu también necesitas `sudo apt install -y cmake build-essential pkg-config libssl-dev`.
+
+También hay binarios precompilados para Linux, FreeBSD y Windows en [GitHub Releases](https://github.com/MostroP2P/mostro-cli/releases) (no hay binario para macOS; usa `cargo install`). Verifica la descarga con el `manifest.txt` de la release:
+
+```bash
+sed 's#  artifact-[^/]*/#  #' manifest.txt | sha256sum -c --ignore-missing
+# Windows (PowerShell): Get-FileHash <archivo> -Algorithm SHA256 y compáralo con manifest.txt
+```
 
 ## Características
 
@@ -28,18 +35,21 @@ Requisitos: Rust 1.64 o superior.
 - Tomar órdenes del libro de ofertas
 - Soporte para órdenes de rango (min-max)
 - Crear órdenes de compra con Lightning Address
-- Chat directo con contrapartes (NIP-17)
-- Gestión de identidad (soporte NIP-06)
-- Flujo completo de disputas
-- Restaurar sesión para recuperar órdenes pendientes
-- Comandos de administración para operadores de Mostro
+- Chat con tu contraparte (protocolo v2 de Mostro, cifrado con NIP-44)
+- Gestión de identidad a partir de una frase de 12 palabras (NIP-06), guardada en `~/.mcli/mcli.db`: haz backup de ella
+- Flujo completo de disputas, incluido el chat con el solver (`disputechat`)
+- Reclamar tu parte de un [depósito anti-abuso](./anti-abuse-bond.md) confiscado (`addbondinvoice`)
+- Restaurar tu identidad y listar las órdenes y disputas que Mostro guarda para ti (`restore`)
+- Comandos de administración para operadores y solvers de Mostro
+
+Mostro CLI habla solo el protocolo v2 (desde la versión 0.16.2), como los nodos de Mostro actuales. Todavía no admite [importar tu reputación](./reputation-import.md), y solo puede crear órdenes de [monedas estables y bitcoin en otras redes](./stablecoins.md) a precio fijo.
 
 ## Uso básico
 
 ```bash
 # Configurar variables de entorno (reemplaza las variables a tu conveniencia)
-export MOSTRO_PUBKEY=npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr
-export RELAYS='wss://relay.mostro.network,wss://nos.lol'
+export MOSTRO_PUBKEY=<el npub del nodo de Mostro que quieres usar>
+export RELAYS='wss://relay.mostro.network,wss://mostro-p2p.tech'
 
 # Listar órdenes disponibles
 mostro-cli listorders
@@ -56,6 +66,8 @@ mostro-cli cancel -o <order-id>
 # Restaurar sesión
 mostro-cli restore
 ```
+
+Mostro CLI no lee ningún archivo de configuración: define el nodo y los relays en el entorno, y pon los flags globales (`-m`, `-r`, `-p`, `-t`, `-v`) antes del comando. No se mantiene conectado, así que ejecuta `mostro-cli getdm` después de cada paso para ver las respuestas de Mostro.
 
 Para ver todos los comandos disponibles:
 

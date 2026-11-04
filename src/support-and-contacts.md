@@ -2,6 +2,8 @@
 
 Mostro no es una empresa, sino un proyecto Open Source, mantenido por su comunidad, por ello no cuenta con un departamento de soporte técnico, aunque sí hay una comunidad a la que puedes acudir en caso de que lo necesites.
 
+Si una operación va lenta o un nodo no responde, primero revisa el estado del nodo en [status.mostro.network](https://status.mostro.network) (consulta [¿Funciona un nodo de Mostro?](./node-status.md)). Las preguntas sobre una operación o disputa concreta van al operador del nodo que usaste.
+
 Si tienes alguna duda puedes preguntar en los grupos de Telegram:
 
 - Mostro community: [https://t.me/MostroP2P](https://t.me/MostroP2P)

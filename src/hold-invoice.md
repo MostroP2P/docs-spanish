@@ -10,6 +10,8 @@ Mostro minimiza el tiempo de custodia de los fondos de los usuarios, limitándol
 
 El pago de la hold invoice también puede liquidarse si los usuarios entran en una [disputa](./disputes.md) y el administrador determina que los Sats deben ser transferidos al comprador. Por el contrario, si el administrador determina que la orden debe ser cancelada, el pago de la hold invoice se cancelará y los Sats se “desbloquearán” en la wallet del vendedor, sin haber salido nunca de ella. Esto también ocurrirá si se realiza una [cancelación](./cancelling-an-order.md) cooperativa, o si se excede el tiempo de validez de la hold invoice, que es limitado.
 
-Las hold invoices generadas por el nodo de Lightning Network del nodo de Mostro actualmente activo en mainnet (`npub1stagewtcks78nvs4vkzm4skqzytk5gwj46kkm8mu2awqqklgswgqfvtamr`) tienen un tiempo de validez aproximado de 2 días.
+El tiempo que una hold invoice permanece válida depende del nodo: en la mayoría dura aproximadamente 1 día (144 bloques), y en algunos hasta 2 días o más. La [Mostro App](./mostro-mobile.md) lo muestra en *Acerca de → Datos técnicos del nodo*, y en [Tiempo de Intercambio](./times.md) puedes ver qué significa para tu operación.
+
+En la app, el vendedor paga la hold invoice desde la pantalla **Bloquear tus sats**, con cualquier billetera Lightning o, si hay una conectada mediante Nostr Wallet Connect, con **Pagar con billetera**.
 
 Además del escrow, algunos nodos pueden exigir una hold invoice adicional como garantía contra el abuso. Consulta [Depósito Anti-Abuso](./anti-abuse-bond.md) para más detalles.
